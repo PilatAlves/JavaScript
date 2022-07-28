@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização</title>
+    <style>
+        input#btn1{
+            color: #fff;
+            background-color: green;
+            border-radius: 5px;
+            width: 50px;
+            height: 20px;
+            border: 0px;
+        box-shadow: 1px 1px 2px #000;
+        }
+        div#res{
+            height: 200px;
+            padding-top: 10px;
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Localização</h1>
+    Em qual pais você está: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Ver" id="btn1">
+    <div id="res">
+
+    </div>
+
+    <script>
+        btn1.addEventListener('click', verificar)
+        btn1.addEventListener('mouseenter', entrar)
+        btn1.addEventListener('mouseout', sair)
+        
+        function verificar(){
+            var a = window.document.querySelector('input#txtp').value
+            var res = window.document.getElementById('res')
+            res.innerHTML = `Você Atualmente está no(a): ${a}`
+            if(a == 'Brasil'){
+                res.innerHTML += ` você é Brasileiro`
+            } else {
+                res.innerHTML += ` você é Estrangeiro`
+            }
+
+           
+
+        }
+        
+        function entrar(){
+            btn1.style.background = 'red'
+
+        }
+
+        function sair(){
+            btn1.style.background = 'green'
+        }
+    </script>
+</body>
+</html>

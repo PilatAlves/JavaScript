@@ -1,0 +1,15 @@
+Sites: 
+https://developer.mozilla.org/pt-BR/docs/Web/Events
+
+* Estudar
+- ArrowFunctions
+- CallBacks
+- FunçõesAnonimas
+- AS IFS IIFE
+- JS Funcional
+- POO com JS
+- Modularização
+- RegEX
+- JSON
+- AJAX
+- NODEJS
