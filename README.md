@@ -1,2 +1,2 @@
-# cursoJS
- curso de JavaScript
+# JavaScript
+ Reposítorio de cursos, projetos e exercícios.
